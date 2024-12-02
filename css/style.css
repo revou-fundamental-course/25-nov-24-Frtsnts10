@@ -5,3 +5,118 @@ body {
   background-color: #f5f5f5;
 }
 
+.main-header {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #555;
+}
+
+.content-container,
+.results-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  gap: 30px;
+}
+
+.form-section,
+.features-section {
+  width: 100%;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-item {
+  margin: 10px;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.gender {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Space between "Pria" and "Wanita" options */
+}
+
+.gender-radio {
+  display: flex;
+  align-items: center; /* Aligns radio button and text vertically */
+  gap: 0.5rem; /* Adds space between the radio button and text */
+}
+
+.gender-radio input {
+  margin: 0; /* Remove any default margin from radio buttons */
+}
+
+.gender-radio label {
+  margin: 0; /* Remove any default margin from the label */
+}
+
+
+.form-item input {
+  width: calc(
+    100% - 0px
+  ); /* Adjust width to include padding and avoid overflow */
+  padding: 12px; /* Ensure consistent padding inside inputs */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding is included in the element's width */
+}
+
+.form-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.results-section {
+  width: 100%;
+  margin: auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
