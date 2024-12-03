@@ -26,11 +26,12 @@
         <section id="form-section" class="form-section">
           <form id="bmiForm">
             <div class="form-item">
-              <label for="gender">Jenis Kelamin</label>
+              <h3 for="gender">Jenis Kelamin</h3>
 
               <div class="gender">
                 <div class="gender-radio">
                   <input
+                    class="selection"
                     type="radio"
                     id="male"
                     name="gender"
@@ -38,9 +39,10 @@
                     required />
                   <label for="male">Pria</label>
                 </div>
-                
+
                 <div class="gender-radio">
                   <input
+                    class="selection"
                     type="radio"
                     id="female"
                     name="gender"
@@ -52,17 +54,17 @@
             </div>
 
             <div class="form-item">
-              <label for="weight">Berat Badan (kg)</label>
+              <h3 for="weight">Berat Badan (kg)</h3>
               <input type="number" id="weight" name="weight" required />
             </div>
 
             <div class="form-item">
-              <label for="age">Usia (tahun)</label>
+              <h3 for="age">Usia (tahun)</h3>
               <input type="number" id="age" name="age" required />
             </div>
 
             <div class="form-item">
-              <label for="height">Tinggi Badan (cm)</label>
+              <h3 for="height">Tinggi Badan (cm)</h3>
               <input type="number" id="height" name="height" required />
             </div>
 
@@ -90,7 +92,7 @@
             ada tindakan yang harus diambil berdasarkan nilainya selain
             berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
           </p>
-          
+
           <p>
             Kalkulator akan memberi Anda gambaran tentang perbandingan berat
             badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung
@@ -103,23 +105,63 @@
       <div class="results-container">
         <!-- Results Section -->
         <section id="results-section" class="results-section">
+          <h2>Hasil</h2>
           <div id="loading" class="hidden">Menghitung...</div>
+
           <div id="result-container" class="hidden">
             <div id="result" class="card"></div>
+            <div class="form-button-result">
+              <button>Konsultasi Ahli Gizi via Aplikasi</button>
+
+              <button>Registrasi Online Ahli Gizi</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Advice Section -->
+        <section id="advice-section" class="advice-section">
+          <h2>Info</h2>
+
+          <div id="advice-container">
+            <div class="additional-advice">
+              <p class="disclaimer">
+                BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari
+                kesehatan tubuh dan resiko penyakit seseorang. Anda perlu
+                konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda
+                terkait dengan berat badan Anda.
+              </p>
+
+              <div class="related-conditions">
+                <h4>Beberapa penyakit yang berasal dari kegemukan</h4>
+                <ul>
+                  <li>Diabetes</li>
+                  <li>Hipertensi</li>
+                  <li>Sakit Jantung</li>
+                  <li>Osteoarthritis</li>
+                </ul>
+                <button class="btn-doctor">
+                  Konsultasi Dokter Via Aplikasi
+                </button>
+                <button class="btn-register-now">
+                  Registrasi Online Sekarang
+                </button>
+              </div>
+            </div>
           </div>
         </section>
       </div>
     </main>
 
-    <footer class="footer">
-      <p>Created by Frtsnts10@<span id="current-year"></span></p>
-    </footer>
-
-    <script>
-      // Script to dynamically set the current year in the footer
-      document.getElementById("current-year").textContent =
-        new Date().getFullYear();
-    </script>
     <script src="/js/script.js"></script>
   </body>
+
+  <footer class="footer">
+    <p>Created by Frtsnts10@<span id="current-year"></span></p>
+  </footer>
+
+  <script>
+    // Script to dynamically set the current year in the footer
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
 </html>
